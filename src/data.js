@@ -42,31 +42,3 @@ export const experiences = [
       points: ["Wordpress", "Drupal", "jQuery"],
     },
   ];
-  
-  export const educations = [
-    {
-      title: "Pfeiffer University",
-      date: "Aug 2009 to May 2013",
-      description: "Bachelor's Degree, Computer Information Systems",
-      location: "Misenheimer, NC",
-    },
-  ];
-  
-  export const links = [
-    {
-      href: "https://github.com/tlouth19",
-      label: "GitHub",
-    },
-    {
-      href: "https://dev.to/tlouth19",
-      label: "Dev.to",
-    },
-    {
-      href: "https://ca.linkedin.com/in/tyson-louth-816b6aa9",
-      label: "LinkedIn",
-    },
-    {
-      href: "mailto:tysonlouth@gmail.com",
-      label: "Email",
-    },
-  ];
