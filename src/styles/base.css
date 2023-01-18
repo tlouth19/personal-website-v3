@@ -11,18 +11,6 @@ section {
   @apply bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-4 mb-6 last-of-type:mb-0;
 }
 
-.card-header {
-  @apply block sm:flex items-center justify-between border-b border-gray-200 dark:border-slate-700 mb-3 pb-3;
-}
-
-.card-header-title {
-  @apply font-semibold uppercase;
-}
-
-.card-header-subtitle {
-  @apply text-xs uppercase opacity-75;
-}
-
 .heading {
   @apply font-semibold mb-4 text-lg uppercase;
 }

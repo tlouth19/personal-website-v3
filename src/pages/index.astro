@@ -1,12 +1,12 @@
 ---
-import { Image } from '@astrojs/image/components';
+import { Image } from "@astrojs/image/components";
 
 import { experiences } from "../data";
 import profile from "../images/profile.png";
 import "../styles/base.css";
 ---
 
-<html lang="en"> 
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -29,13 +29,16 @@ import "../styles/base.css";
       <h1 class="sr-only">Tyson Louth | Front End Developer</h1>
     </header>
     <section>
-     
       <h2 class="heading">Profile</h2>
       <div class="card block sm:flex items-center gap-6">
-        <Image src={profile} alt="Tyson Louth profile image." class="w-16 h-16 sm:w-24 sm:h-24 mb-4 sm:mb-0" />
+        <Image
+          src={profile}
+          alt="Tyson Louth profile image."
+          class="w-16 h-16 sm:w-24 sm:h-24 mb-4 sm:mb-0"
+        />
         <div class="flex-auto">
           <div class="border-b border-gray-200 dark:border-slate-700 mb-2 pb-2">
-            <h3 class="uppercase font-semibold">Tyson Louth</h3>
+            <h3 class="font-semibold">Tyson Louth</h3>
             <p>Senior Front End Developer</p>
           </div>
           <div class="flex items-center gap-4 text-sm">
@@ -69,17 +72,16 @@ import "../styles/base.css";
       </div>
     </section>
     <section>
-     
       <h2 class="heading">Experience</h2>
       {
         experiences.map((experience) => (
           <div class="card">
-            <div class="card-header">
-              <h3 class="card-header-title">{experience.title}</h3>
-              <small class="card-header-subtitle">{experience.location}</small>
-            </div>
-            <p>{experience.description}</p>
-            <p class="text-sm mb-4 opacity-75">{experience.date}</p>
+            <h3 class="font-semibold mb-2">
+              <span class="block sm:inline">{experience.title} </span><span class="hidden sm:inline">-</span> <span class="block sm:inline"> {experience.description}</span>
+            </h3>
+            <p class="text-sm">{experience.location}</p>
+            <p class="text-sm mb-4">{experience.date}</p>
+
             <p class="sr-only">Tools used:</p>
             <ul class="flex flex-wrap gap-2 ">
               {experience.points.map((point) => (
@@ -93,19 +95,16 @@ import "../styles/base.css";
       }
     </section>
     <section>
-      
       <h2 class="heading">Education</h2>
       <div class="card">
-        <div class="card-header">
-          <p class="card-header-title">Pfeiffer University</p>
-          <p class="card-header-subtitle">Misenheimer, NC</p>
-        </div>
-        <p>Bachelor's Degree, Computer Information Systems</p>
-        <p class="text-sm opacity-75">Aug 2009 to May 2013</p>
+        <h3 class="font-semibold mb-2">
+          <span class="block sm:inline">Pfeiffer University </span><span class="hidden sm:inline">-</span> <span class="block sm:inline"> B.S Computer Information Systems</span>
+        </h3>
+        <p class="text-sm">Misenheimer, NC</p>
+        <p class="text-sm">August 2009 to May 2013</p>
       </div>
     </section>
     <section>
-     
       <h2 class="heading">Awards</h2>
       <ul class="list-disc pl-4">
         <li>
