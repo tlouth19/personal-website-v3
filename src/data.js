@@ -42,3 +42,19 @@ export const experiences = [
       points: ["Wordpress", "Drupal", "jQuery"],
     },
   ];
+
+  export const recentProjects = [
+    {
+      title: "Analyze.Golf",
+      description: "Browser-based golf swing analyzer built with Next.js, Tailwind and Konva.js.",
+      points: ["Next.js", "Tailwind", "Konva.js"],
+      url: "https://www.analyze.golf/",
+      git: "https://github.com/tlouth19/analyze.golf"
+    },
+    {
+      title: "Lake St. George Golf Club",
+      description: "Website development and design using Next.js. All data is fetched from Twitter and Instagram APIs inside React server components, using the new Next.js app directory. I also handled all videos and photography.",
+      points: ["Next.js", "Tailwind", "Photography", "Videography"],
+      url: "https://www.lakestgeorgegolf.com/"
+    }
+  ]
