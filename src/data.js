@@ -46,8 +46,8 @@ export const experiences = [
   export const recentProjects = [
     {
       title: "Analyze.Golf",
-      description: "Browser-based golf swing analyzer built with Next.js, Tailwind and Konva.js.",
-      points: ["Next.js", "Tailwind", "Konva.js"],
+      description: "Browser-based golf swing analyzer built with React, Redux, Tailwind and Konva.js.",
+      points: ["React", "Redux", "Vite", "Tailwind", "Konva.js"],
       url: "https://www.analyze.golf/",
       git: "https://github.com/tlouth19/analyze.golf"
     },
