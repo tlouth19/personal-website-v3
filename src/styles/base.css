@@ -7,10 +7,14 @@ section {
   @apply max-w-2xl mx-auto mb-16 md:mb-24;
 }
 
-.card {
-  @apply bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-4 mb-6 last-of-type:mb-0;
+.heading {
+  @apply font-bold tracking-wide mb-4 pb-1 text-2xl border-b border-gray-200 dark:border-slate-700;
 }
 
-.heading {
-  @apply font-semibold mb-4 text-lg uppercase;
+.heading-2 {
+  @apply font-semibold text-lg tracking-wide leading-tight;
+}
+
+.text-secondary {
+  @apply text-gray-600 dark:text-gray-300;
 }

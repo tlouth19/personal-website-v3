@@ -2,6 +2,67 @@
 
 export const experiences = [
   {
+    company: "Zebel",
+    location: "San Francisco, California",
+    roles: [
+      {
+        title: "Principal Engineer",
+        date: "March 2024 to Present",
+      },
+      {
+        title: "Senior Front End Developer",
+        date: "August 2022 to March 2024",
+      },
+    ],
+  },
+  {
+    company: "Commerce7",
+    location: "Vancouver, British Columbia",
+    roles: [
+      {
+        title: "Senior Front End Developer",
+        date: "June 2020 to August 2022",
+      },
+    ],
+  },
+  {
+    company: "Caredove",
+    location: "Orillia, Ontario",
+    roles: [
+      {
+        title: "Senior Front End Developer",
+        date: "October 2019 to June 2020",
+      },
+    ],
+  },
+  {
+    company: "Teaching.com",
+    location: "San Juan, Puerto Rico",
+    roles: [
+      {
+        title: "Software Developer",
+        date: "May 2019 to October 2019",
+      },
+    ],
+  },
+  {
+    company: "CineSend",
+    location: "Toronto, Ontario",
+    roles: [
+      {
+        title: "Lead Front End Developer",
+        date: "April 2016 to April 2019",
+      },
+      {
+        title: "Front End Developer",
+        date: "June 2015 to April 2016",
+      },
+    ],
+  },
+];
+
+export const experiences2 = [
+  {
     title: "Zebel",
     date: "August 2022 to Present",
     description: "Senior Front End Developer",
@@ -45,8 +106,15 @@ export const experiences = [
   },
   {
     title: "BitCine (CineSend)",
-    date: "June 2015 to May 2019",
+    date: "Apr 2016 to Apr 2019",
     description: "Lead Front End Developer",
+    location: "Toronto, ON",
+    points: ["React", "Redux", "Vue", "SASS", "Laravel"],
+  },
+  {
+    title: "BitCine (CineSend)",
+    date: "June 2015 to Apr 2016",
+    description: "Front End Developer",
     location: "Toronto, ON",
     points: ["React", "Redux", "Vue", "SASS", "Laravel"],
   },
