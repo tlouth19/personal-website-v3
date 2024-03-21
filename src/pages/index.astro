@@ -75,38 +75,42 @@ import "../styles/base.css";
     </section>
     <section>
       <h2 class="heading">Experience</h2>
-      {
-        experiences.map((experience) => (
-          <div class="mb-8">
-            {experience.roles.length > 1 && (
-              <div>
-                <h3 class="heading-2 font-semibold">{experience.company}</h3>
-                <p class="text-sm mb-2 text-secondary">{experience.location}</p>
-                <ul class="list-none pl-4">
-                  {experience.roles.map((role) => (
-                    <li class="mb-2 relative before:hidden first-of-type:before:block before:absolute before:top-5 before:-bottom-3 before:-left-[14.5px] before:rounded-sm before:w-[1px] before:bg-gray-600 before:dark:bg-slate-500">
-                      <div class="font-semibold relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-4 before:h-1 before:w-1 before:rounded-sm before:bg-gray-600 before:dark:bg-slate-500">
-                        {role.title}
-                      </div>
-                      <div class="text-sm text-secondary">{role.date}</div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {experience.roles.length === 1 && (
-              <div>
-                <h3 class="heading-2 font-semibold">
-                  {experience.company} - {experience.roles[0].title}
-                </h3>
-                <p class="text-sm mb-2 text-secondary">
-                  {experience.location} &bull; {experience.roles[0].date}
-                </p>
-              </div>
-            )}
-          </div>
-        ))
-      }
+      <ul>
+        {
+          experiences.map((experience) => (
+            <li class="mb-8">
+              {experience.roles.length > 1 && (
+                <div class="list-none">
+                  <h3 class="heading-2 font-semibold">{experience.company}</h3>
+                  <p class="text-sm mb-2 text-secondary">
+                    {experience.location}
+                  </p>
+                  <ul class="list-none pl-4">
+                    {experience.roles.map((role) => (
+                      <li class="mb-2 relative before:hidden first-of-type:before:block before:absolute before:top-5 before:-bottom-3 before:-left-[14.5px] before:rounded-sm before:w-[1px] before:bg-gray-600 before:dark:bg-slate-500">
+                        <div class="font-semibold relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-4 before:h-1 before:w-1 before:rounded-sm before:bg-gray-600 before:dark:bg-slate-500">
+                          {role.title}
+                        </div>
+                        <div class="text-sm text-secondary">{role.date}</div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {experience.roles.length === 1 && (
+                <div class="list-none">
+                  <h3 class="heading-2 font-semibold">
+                    {experience.company} - {experience.roles[0].title}
+                  </h3>
+                  <p class="text-sm mb-2 text-secondary">
+                    {experience.location} &bull; {experience.roles[0].date}
+                  </p>
+                </div>
+              )}
+            </li>
+          ))
+        }
+      </ul>
     </section>
     <section>
       <h2 class="heading">Education</h2>
